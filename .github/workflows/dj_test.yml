@@ -32,8 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build, tag, and push image to Yandex Cloud Container Registry
         env:
-           CR_REGISTRY: crp00000000000000000
-           CR_REPO: yc-cr-github-action
+           CR_REGISTRY: crptskea1ibrggv5u7uo
+           CR_REPO: dj_1
            IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t cr.yandex/$CR_REGISTRY/$CR_REPO:$IMAGE_TAG .
